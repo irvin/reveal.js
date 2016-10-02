@@ -7,9 +7,8 @@
  */
 
 
-// Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+// Mozilla mixins and settings -----------------
+@import "../mozilla/settings";
 // ---------------------------------------------
 
 // Fonts according to Mozilla brand guidelines
@@ -73,9 +72,9 @@ $selectionBackgroundColor: #134674;
 // Overriding theme template
 // Base theme template for reveal.js
 
-/*********************************************
- * GLOBAL STYLES
- *********************************************/
+// Theme template ------------------------------
+@import "../mozilla/theme";
+// ---------------------------------------------
 
 body {
 	@include sandStoneBG();

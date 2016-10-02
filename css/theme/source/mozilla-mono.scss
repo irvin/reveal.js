@@ -28,11 +28,11 @@ $headingTextShadow: $Mozilla-text-shadow;
 $headingColor: $Mozilla-heading-color;
 
 // Links
-$linkColor: $Mozilla-red;
+$linkColor: $Mozilla-charcoal;
 $linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
-$selectionBackgroundColor: $Mozilla-red;
+$selectionBackgroundColor: $Mozilla-charcoal;
 $selectionColor: #fff;
 
 
@@ -40,7 +40,6 @@ $selectionColor: #fff;
 @import "../mozilla/theme";
 // ---------------------------------------------
 body {
-	@include Mozilla-sand-RG();
 	background-color: $backgroundColor;
 }
 
@@ -52,7 +51,7 @@ body {
 
 .reveal h1{
     font-weight: 700;
-    color: $Mozilla-red;
+    color: $Mozilla-charcoal;
 }
 .reveal h2,
 .reveal h3,
@@ -63,7 +62,7 @@ body {
 }
 
 .reveal p code {
-    background-color: $Mozilla-charcoal;
+    background-color: $Mozilla-main-color;
     display: inline-block;
     border-radius: 7px;
 }
