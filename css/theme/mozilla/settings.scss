@@ -1,0 +1,58 @@
+/**
+ * Mozilla theme for reveal.js
+ * Author: Nemlaghi Bechir http://github.com/bashz
+ *
+ * Designed to be used with highlight.js theme
+ * "monokai_sublime.css" available from
+ * https://github.com/isagalaev/highlight.js/
+ *
+ * For other themes, change $codeBackground accordingly.
+ *
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(./mozilla/styles/fonts.css);
+
+// Links
+$Mozilla-link: #0073aa;
+
+// Branding Colors
+$Mozilla-red: #C13832;
+$Mozilla-sand: #D7D3C8;
+$Mozilla-charcoal: #4D4E53;
+
+// Gradients Linear
+@mixin Mozilla-red-LGV() {
+	@include vertical-gradient( #c13832, #ea3b28 );
+}
+@mixin Mozilla-sand-LGV() {
+	@include vertical-gradient( #d7d3c8, #f6f4ec );
+}
+@mixin Mozilla-red-LGH() {
+	@include horizontal-gradient( #c13832, #ea3b28 );
+}
+@mixin Mozilla-sand-LGH() {
+	@include horizontal-gradient( #d7d3c8, #f6f4ec );
+}
+
+// Gradients Radial
+@mixin Mozilla-red-RG() {
+	@include radial-gradient( #c13832, #ea3b28 );
+}
+@mixin Mozilla-sand-RG() {
+	@include radial-gradient( #d7d3c8, #f6f4ec );
+}
+
+// Texts
+$Mozilla-main-color: #333;
+$Mozilla-heading-color: #484848;
+
+// Font
+$Mozilla-text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+$Mozilla-main-font: 'Open Sans',X-LocaleSpecific,sans-serif;
+$Mozilla-heading-font: 'Open Sans Light',X-LocaleSpecific-Light,'Open Sans',X-LocaleSpecific,sans-serif;

@@ -1,0 +1,73 @@
+/**
+ * Mozilla theme for reveal.js
+ * Author: Nemlaghi Bechir http://github.com/bashz
+ *
+ * Designed to be used with highlight.js theme
+ * "monokai_sublime.css" available from
+ * https://github.com/isagalaev/highlight.js/
+ *
+ * For other themes, change $codeBackground accordingly.
+ *
+ */
+
+// Default mixins and settings -----------------
+@import "../mozilla/settings";
+// ---------------------------------------------
+
+// Background
+$backgroundColor: $Mozilla-sand;
+
+// Main text
+$mainFont: $Mozilla-main-font;
+$mainFontSize: 36px;
+$mainColor: $Mozilla-main-color;
+
+// Headings
+$headingFont: $Mozilla-heading-font;
+$headingTextShadow: $Mozilla-text-shadow;
+$headingColor: $Mozilla-heading-color;
+
+// Links
+$linkColor: $Mozilla-red;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: $Mozilla-red;
+$selectionColor: #fff;
+
+
+// Theme template ------------------------------
+@import "../mozilla/theme";
+// ---------------------------------------------
+body {
+	@include Mozilla-sand-RG();
+	background-color: $Mozilla-sand;
+}
+
+.reveal p {
+    color: $Mozilla-main-color;
+    font-weight: 300;
+    text-shadow: $Mozilla-text-shadow;
+}
+
+.reveal h1{
+    font-weight: 700;
+    color: $Mozilla-red;
+}
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-weight: normal;
+}
+
+.reveal p code {
+    background-color: $Mozilla-charcoal;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.reveal small code {
+    vertical-align: baseline;
+}
