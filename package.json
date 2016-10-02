@@ -1,7 +1,7 @@
 {
   "name": "moz-reveal.js",
   "version": "3.3.0",
-  "description": "reveal + mozilla themes",
+  "description": "Reveal + Mozilla themes",
   "homepage": "http://github.mozilla-tunisia.org/reveal.js/demo.html",
   "subdomain": "revealjs",
   "main": "js/reveal.js",

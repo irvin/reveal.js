@@ -1,22 +1,23 @@
 {
-  "name": "reveal.js",
+  "name": "moz-reveal.js",
   "version": "3.3.0",
   "main": [
     "js/reveal.js",
     "css/reveal.css"
   ],
-  "homepage": "http://lab.hakim.se/reveal-js/",
+  "homepage": "http://github.mozilla-tunisia.org/reveal.js/demo.html",
   "license": "MIT",
-  "description": "The HTML Presentation Framework",
+  "description": "Reveal + Mozilla themes",
   "authors": [
-    "Hakim El Hattab <hakim.elhattab@gmail.com>"
+    "Hakim El Hattab <hakim.elhattab@gmail.com>",
+    "Bechir Nemlaghi <nemlaghi.bechir@gmail.com>"
   ],
   "dependencies": {
     "headjs": "~1.0.3"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/moztn/reveal.js.git"
   },
   "ignore": [
     "**/.*",
